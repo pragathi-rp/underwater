@@ -1,4 +1,4 @@
-# Underwater Image Enhancement with Reinforcement Learning 
+# Underwater Image Enhancement With Reinforcement Learning 
 
 #### Prerequisites
 
