@@ -40,4 +40,4 @@ Prepare the dataset according to [https://li-chongyi.github.io/proj_benchmark.ht
 
 #### Enhanced Results (Left: Raw. Middle: Reference. Right: Ours)
 ![Image text](https://gitee.com/sunshixin_upc/underwater-image-enhancement-with-reinforcement-learning/blob/master/Experimental%20results/Testing%20set/50.png)
-![Image text](https://gitee.com/sunshixin_upc/underwater-image-enhancement-with-reinforcement-learning/blob/master/Experimental%20results/Testing%20set/86.png)
+![Image text](https://gitee.com/sunshixin_upc/underwater-image-enhancement-with-reinforcement-learning/raw/master/Experimental%20results/Testing%20set/86.png)
