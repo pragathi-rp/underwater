@@ -37,3 +37,6 @@ Prepare the dataset according to [https://li-chongyi.github.io/proj_benchmark.ht
 4. Put the data to corresponding folders (target images are only used for scoring and do not participate in the implementation process)
 5. CUDA_VISIBLE_DEVICES=1 python3 main.py --test --prefix test_model 
 6. Find enhancement results in the ./test/test_model/step_0000000000
+
+#### Results
+![Image text](https://gitee.com/sunshixin_upc/underwater-image-enhancement-with-reinforcement-learning/blob/master/Experimental%20results/Testing%20set/86.png)
