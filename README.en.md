@@ -1,36 +1,39 @@
 # Underwater Image Enhancement with Reinforcement Learning 
 
-#### Description
-{**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}
+#### Prerequisites
 
-#### Software Architecture
-Software architecture description
+1.  CUDA 11.0
+2.  Python 3.7
+3.  TensorFlow 2.4
 
-#### Installation
+#### Compilation
+Install all the python dependencies using pip:
+        
+        pip install -r requirements.txt
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### Data Preparation
+Prepare the dataset according to [https://li-chongyi.github.io/proj_benchmark.html](https://li-chongyi.github.io/proj_benchmark.html) and put the data into the corresponding folder as follows:
 
-#### Instructions
+        RL
+        └── data
+            ├── train
+            │   ├── target
+            │   └── raw
+            └── test
+                 ├── target
+                 └── raw
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### Training
+    1. Clone the repo
+    2. Download the VGG-pretrained model from [VGG in Tensorflow](https://github.com/jcheng1602/tensorflow-vgg)
+    3. Put the training data to corresponding folders
+    4. CUDA_VISIBLE_DEVICES=1 python3 main.py --prefix train_model
+    5. Find checkpoints in the ./checkpoints/ 
 
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
-
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### Implementation
+    1. Clone the repo
+    2. Change the default value of --test to True and the default value of --model_path to $model path in ./checkpoints
+    2. Download the checkpoint from [Baidu Cloud](https://pan.baidu.com/s/1NLVFlfivIm-tyAJut73vQw) (Password: 1314)
+    3. Put the data to corresponding folders (target images are only used for scoring and do not participate in the implementation process)
+    4. CUDA_VISIBLE_DEVICES=1 python3 main.py --test --prefix test_model 
+    5. Find enhancement results in the ./test/test_model/step_0000000000
